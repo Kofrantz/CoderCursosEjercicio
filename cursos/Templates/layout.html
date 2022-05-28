@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderCursos</title>
+</head>
+
+<style>
+    body {
+        color: white;
+        background:rgb(84, 84, 84);
+        margin: 0;
+    }
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        gap: 1rem;
+    }
+    .card{
+        background: rgb(128, 128, 128);
+        border-radius: 1rem;
+        padding: 1rem;
+        width: auto;
+        text-align: center;
+    }
+    .navbar{
+        background:rgb(48, 48, 48);
+        width: calc(100%-2rem);
+        padding: 1rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    h1{
+        margin: 0;
+    }
+    .pic{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
+    .titulo{
+        margin-left: 1rem;
+    }
+</style>
+<body>
+    <div class="navbar"><a href="/cursos">CODERCURSOS</a></div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

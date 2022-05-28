@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    {% for e in estudiantes %}
+        <div class="card">
+            <img class="pic" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+            <h2>{{e.nombre}} {{e.apellido}}</h2>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

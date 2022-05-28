@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    {% for c in cursos %}
+        <a href="/estudiantes/{{c.id}}">
+            <div class="card">
+                <h2>{{c.titulo}}</h2>
+                <span>{{c.duracion}} meses</span>
+            </div>
+        </a>
+    {% endfor %}
+</div>
+{% endblock %}
